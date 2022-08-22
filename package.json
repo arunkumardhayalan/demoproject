@@ -1,0 +1,91 @@
+{
+  "name": "react-storybook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.4",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-console": "^1.2.3",
+    "@storybook/addon-controls": "^6.5.10",
+    "@storybook/addon-storysource": "^6.5.10",
+    "@storybook/addons": "^6.5.10",
+    "@storybook/theming": "^6.5.10",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.22.6",
+    "apexcharts": "^3.35.4",
+    "build": "^0.1.4",
+    "ckeditor4-react": "^4.0.0",
+    "framer-motion": "^7.0.0",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.4.0",
+    "storybook-addon-designs": "^6.3.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/node-logger": "^6.5.10",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "autoprefixer": "^10.4.8",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "postcss": "^8.4.16",
+    "prop-types": "^15.8.1",
+    "react-docgen": "^5.4.3",
+    "storybook-design-token": "^2.6.0",
+    "style-dictionary": "^3.7.1",
+    "tailwindcss": "^3.1.8",
+    "webpack": "^5.74.0"
+  }
+}

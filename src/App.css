@@ -1,0 +1,76 @@
+
+@import "./scss/_variables.scss";
+
+/* import '' */
+:root {
+  /**
+  * @tokens Animations
+  * @presenter Animation
+  */
+
+  --animation-rotate: rotate 1.2s infinite cubic-bezier(0.55, 0, 0.1, 1);
+
+  /**
+  * @tokens Colors
+  * @presenter Color
+  */
+
+  --b100: hsl(240, 100%, 90%); /* Token Description Example  @presenter Color */
+  --b200: hsl(240, 100%, 80%);
+  --b300: hsl(240, 100%, 70%);
+
+  /**
+  * @tokens Others
+  */
+  --border-normal: 3px dashed red; /* Token Description Example @presenter BorderRadius */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.border_field {
+  border: 1px solid #ddd;
+}
+
+.p_clr {
+  color: red;
+}
+
+.bg-clr{
+  background-color: global-bg-secondary-tokens;
+}

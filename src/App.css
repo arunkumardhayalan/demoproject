@@ -1,5 +1,4 @@
-
-@import "./scss/_variables.scss";
+@import url("./scss/_variables.scss");
 
 /* import '' */
 :root {
@@ -71,6 +70,7 @@
   color: red;
 }
 
-.bg-clr{
-  background-color: global-bg-secondary-tokens;
+.bg-clr {
+  background: var(--global-bg-primary-tokens);
+  color: var(--bg-secondary-tokens);
 }
